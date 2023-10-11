@@ -1,13 +1,11 @@
 
-import './App.css';
+import Body from './Components/Body';
 
 function App() {
   return (
    
-     
-     <div className=' text-3xl'  >how are you</div>
-   
-  );
+     <Body />
+   );
 }
 
 export default App;
