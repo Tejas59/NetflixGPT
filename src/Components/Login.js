@@ -1,16 +1,15 @@
 import { useState, useRef } from "react";
 import Header from "./Header";
+import { checkValidData } from "../utilis/validate";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import { useDispatch } from "react-redux";
-import { BG_URL, USER_AVATAR } from "../utilis/constants";
-import { addUser } from "../utilis/userSlice";
-import { checkValidData } from "../utilis/validate";
 import { auth } from "../utilis/firebase";
-
+import { useDispatch } from "react-redux";
+import { addUser } from "../utilis/userSlice";
+import { BG_URL, USER_AVATAR } from "../utilis/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
